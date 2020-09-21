@@ -438,7 +438,4 @@ long long Big_Integer::toInt(string s)
 
 #endif
 
-int main()
-{
-    return 0;
-}
+
