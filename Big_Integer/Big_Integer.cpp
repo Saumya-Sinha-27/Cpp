@@ -239,6 +239,11 @@ Big_Integer& Big_Integer::operator[](int position)
 	return *(this + (position*sizeof(Big_Integer)));
 }
 
+Big_Integer Big_Integer::operator -() // unary minus sign
+{
+	return (*this) * -1;
+}
+
 Big_Integer::operator string()
 {
 	string signedString = ( get_sign() ) ? "-" : "";
