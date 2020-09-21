@@ -42,6 +42,7 @@ public:
     Big_Integer& operator*=(Big_Integer b);
     Big_Integer& operator/=(Big_Integer b);
     Big_Integer& operator%=(Big_Integer b);
+    Big_Integer& operator[](int position);
     Big_Integer operator-();
     operator string();
 private:

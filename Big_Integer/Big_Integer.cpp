@@ -234,6 +234,11 @@ Big_Integer& Big_Integer::operator%=(Big_Integer b)
     return (*this);
 }
 
+Big_Integer& Big_Integer::operator[](int position)
+{
+	return *(this + (position*sizeof(Big_Integer)));
+}
+
 Big_Integer::operator string()
 {
 	string signedString = ( get_sign() ) ? "-" : "";
